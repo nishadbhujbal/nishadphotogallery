@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5ECFF;
+}
+
+/* Navbar */
+#navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    margin-bottom: 5px;
+}
+
+#navbar li:hover {
+    color: #BEAFC2;
+    transition: 0.4s;
+}
+
+#logo {
+    height: 42px;
+    margin: 54px;
+    border-radius: 10px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 33px;
+}
+
+.nav-items {
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* Gallery section */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+#gallery {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 15px;
+}
+
+#gallery .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery .wide {
+    grid-column: span 2;
+}
+
+#gallery .tall {
+    grid-row: span 2;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231 225 225);
+    color: rgb(113 110 110);
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    height: 35px;
+}
