@@ -21,10 +21,6 @@ app.get('/nishad', (req, res) => {
     const params = {}
     res.status(200).render('nishad.pug');
 })
-app.get('/nishad', (req, res) => {
-    const params = {}
-    res.status(200).render('Ganesh.pug');
-})
 
 // Start the server
 app.listen(port, () => {
