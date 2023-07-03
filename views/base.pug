@@ -1,0 +1,25 @@
+html
+  head
+    title Nishad&apos;s Photo Gallery
+    block style
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Nunito&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='../static/style.css')
+        link(rel='stylesheet' media='screen and (max-width: 700px)' href='../static/phone.css')
+  body
+    section#navbar
+        img#logo(src='./static/logo.png' alt='NB logo')
+        ul.nav-menu
+            li.nav-items #[a(href="/nishad") Nishad]
+            li.nav-items #[a(href="/football") Football]
+            li.nav-items #[a(href="/vishv") Vishv]
+            li.nav-items #[a(href="/pets") Cats n Dogs]
+        .hamburger
+            span.bar
+            span.bar
+            span.bar
+    block content
+    footer#footer 
+        | Copyright© 2023 NishadPhotoGallery.com | All rights reserved
+    script(src='../static/script.js')

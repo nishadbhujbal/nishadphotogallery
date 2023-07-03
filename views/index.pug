@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Nishad&apos;s Photo Gallery
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Nunito&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' media='screen and (max-width: 700px)' href='../static/phone.css')
+section#navbar
+  img#logo(src='./static/img/logo.png' alt='NB logo')
+  ul.nav-menu
+    li.nav-items #[a(href="/") Ganesh]
+    li.nav-items #[a(href="/") Vishv]
+    li.nav-items #[a(href="/") Ashpak]
+    li.nav-items #[a(href="/") Alvin]
+  .hamburger
+    span.bar
+    span.bar
+    span.bar
+section#gallery
+  #img1.images.tall
+    img(src='./static/img/img1.jpg')
+  #img4.images.wide
+    img(src='./static/img/img4.jpg')
+  #img5.images.wide
+    img(src='./static/img/img5.jpg')
+  #img3.images.tall
+    img(src='./static/img/img3.jpg')
+  #img7.images.wide
+    img(src='./static/img/img7.jpg')
+  #img6.images.wide
+    img(src='./static/img/img6.jpg')
+  #img8.images.wide
+    img(src='./static/img/img8.jpg')
+  #img2.images.tall
+    img(src='./static/img/img2.jpg')
+  #img9.images
+    img(src='./static/img/img9.jpg')
+  #img10.images.wide
+    img(src='./static/img/img10.jpg')
+  #img11.images
+    img(src='./static/img/img11.jpg')
+footer#footer 
+  | Copyright© 2023 NishadPhotoGallery.com | All rights reserved
+script(src='../static/script.js')
